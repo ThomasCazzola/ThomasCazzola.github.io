@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta char = "UTF-8">
+        <title>Biglietteria del treno</title>
+        <script type = text/javascript src="../JS/calcoli.js">
+        </script>
+        <style>
+            .dati{
+                width: 100;
+                height: 30;
+                color: rgb(240, 126, 20);
+            }
+            .scelta{
+                width: 30;
+                height: 30;
+                color:lightsalmon;
+                text-align: right;
+            }
+            .btn{
+                width: 50;
+                height: 20;
+                color:chocolate;
+                font: Arial;
+                font-size:medium;
+            }
+            .price{
+                font:bold;
+                color:black;
+                font-size:medium;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>Chilometri: <input type="text" id="km" class="dati">
+                <select id="persone">
+                    <option>1 persona</option>
+                    <option>2 persone</option>
+                    <option>3 persone</option>
+                    <option>4 persone</option>
+                    <option>5 persone</option>
+                    <option>6 persone</option>
+                </select>
+                <input type="radio" id="primaclasse" name="posto" class="scelta">
+                <label for = "primaclasse">prima classe</label>
+                <input type="radio" id="secondaclasse" name="posto" class="scelta">
+                <label for = "primaclasse">seconda classe</label>
+            </p>
+            <p><input type="button" id="bottone" value="calcola costo" class="btn" onclick="calcola()">
+            <p id="risultato" class="price">----</p>
+        </form>
+    </body>
+</html>
