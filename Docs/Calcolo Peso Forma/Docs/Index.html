@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta char = "UTF-8">
+        <title>Calcolo Peso Forma</title>
+        <script type = "text/javascript" src="../JS/calcoli.js">
+        </script>
+        <style>
+            .Dati{
+                height: 30px;
+                width: 80px;
+                color:brown;
+            }
+            .Risultati{
+                height: 30px;
+                width: 80px;
+                color:brown;
+            }
+            .Btn{
+                height: 30px;
+                width: 80px;
+                color:brown;
+                font-weight: bold;
+                border-style: groove;
+            }
+        </style>
+    </head>
+    <body bgcolor = "lightgray">
+        <form>
+            <fieldset>
+                <legend>
+                    <h1 font face="Arial" font size="5">Inserisci</h1>
+                </legend>
+
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong><u><font face="Arial" font size = "5">Dati</font></u></strong></th>
+                            <th><strong><u><font face="Arial" font size = "5">Inserisci</font></u></strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td><strong>Altezza:   </strong></td>
+                            <td><input type="text" id="Altezza" class="Dati"><font size ="3">cm</font></td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                        <tr>
+                            <td><strong>Sesso:   </strong></td>
+                            <td>
+                                <select id="Sesso" class="Dati">
+                                    <option>Maschio</option>
+                                    <option>Donna</option>
+                                    <option>Preferisco non specificare</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td><strong>Eta':   </strong></td>
+                            <td><input type="text" id="Eta'" class="Dati"><font size ="3">anni</font></td>
+                        </tr>
+                    </tbody>                    
+                </table>
+            </fieldset>
+
+            <br><br>
+            <p><input type="button" id="Bottone" value="Calcola" class = "Btn" onclick="Risultati()"></p>
+            <br><br>
+
+            <fieldset>
+                <legend>
+                    <h1 font face="Arial" font size="5">Calcoli</h1>
+                </legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong><u><font face="Arial" font size = "5">Formula</font></u></strong></th>
+                            <th><strong><u><font face="Arial" font size = "5">Risultato</font></u></strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Formula Di Lorenz</td>
+                            <td> | Peso Forma:  <output type="text" id="ValoreLorenz" class = "Risultati"></output></td>
+                        </tr>
+
+                        <tr>
+                            <td>OK</td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr><td></td><td></td></tr><tr><td></td><td></td></tr>
+
+                        <tr>
+                            <td>Formula Di Broca</td>
+                            <td> | Peso Forma:   <output type="text" id="ValoreBroca" class="Risultati"></output></td>
+                        </tr>
+                        <tr>
+                            <td>Sovrastima il risultato</td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr><td></td><td></td></tr><tr><td></td><td></td></tr>
+
+                        <tr>
+                            <td>Formula Di Wan Der Vael</td>
+                            <td> | Peso Forma:   <output type="text" id="ValoreVael" class="Risultati"></output></td>
+                        </tr>
+                        <tr>
+                            <td>OK</td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr><td></td><td></td></tr><tr><td></td><td></td></tr>
+
+                        <tr>
+                            <td>BMI (Body Max Index)</td>
+                            <td> | Peso Forma:   <output type="text" id="ValoreBMI" class="Risultati"></output></td>
+                        </tr>
+                        <tr>
+                            <td>OK</td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr><td></td><td></td></tr><tr><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
