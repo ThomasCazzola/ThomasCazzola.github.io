@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta char ="UTF-8">
+        <script type = "text/javascript"  src = "../JS/calcoli.js">
+        </script>
+        <style type ="text/css">
+            .dati{
+                width: 160px;
+                height: 20px;
+                text-align: right;
+            }
+            .risultati{
+                color: blue;
+                font-size: 110%;
+            }
+            .bottone{
+                width:100px;
+                height:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>volume: <input type="text" id="volume" class="dati">
+                <select id="materiali">
+                    <option>Acciaio</option>
+                    <option>Alluminio</option>
+                    <option>Ottone</option>
+                    <option>Rame</option>
+                </select>
+            </p>
+            <p><input type="button" value="calcola" class="bottone" onclick="calcola()"></p>
+            <p id="peso" class="risultati">risultato</p>
+        </form>
+    </body>
+</html>
