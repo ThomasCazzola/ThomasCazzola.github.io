@@ -1,0 +1,19 @@
+#punteggio{
+    border: 2px solid black;
+}
+
+#riquadropunteggio{
+    width: 150px;
+}
+
+.Text{
+    color: brown;
+}
+
+#riquardoGenerale{
+    border-style: groove;
+}
+
+#RisUtente{
+    border: 2px solid black;
+}
