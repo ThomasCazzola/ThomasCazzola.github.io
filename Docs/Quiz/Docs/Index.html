@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta char = "UTF-8">
+        <title>Questionario</title>
+        <script type="text/javascript" src="../JS/Calcoli.js">
+        </script>
+
+        <link rel ="stylesheet" href="../CSS/Style.css">
+    </head>
+    <body>
+    <form>
+        <center><h1><font face="Arial" font size = "12">Questionario</font></h1></center>
+        <p>
+            <fieldset>
+                <p><font size="4"><strong>Dati Anagrafici:</strong></font></p>
+                <p>Cognome:<input type="text" id="cognome" class="Dati"> Nome:<input type="text" id="nome" class="Dati"></p>
+            </p>
+            <p>
+                <p><font size="4"><strong>Data di nascita:</strong></font></p>
+                <p>
+                    Giorno:<input type="text" id="giorno" class="Dati">
+                    Mese: 
+                    <select id = "mese">
+                        <option>Gennaio</option>
+                        <option>Febbraio</option>
+                        <option>Marzo</option>
+                        <option>Aprile</option>
+                        <option>Maggio</option>
+                        <option>Giugno</option>
+                        <option>Luglio</option>
+                        <option>Agosto</option>
+                        <option>Settembre</option>
+                        <option>Ottobre</option>
+                        <option>Novembre</option>
+                        <option>Dicembre</option>
+                    </select> 
+                    Anno:<input type="text" id="anno" class="Dati"></p>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset id="riquardoGenerale">
+                <legend>
+                    <strong>Domande:</strong>
+                </legend>
+
+                <!--Prima Domanda-->
+                <p>
+                    Qual'è il linguaggio di programmazione usato per creare e modificare i database?(in maiuscolo)
+                    <br>
+                    <input type="text" id="primadomanda" class="Text" onchange="MettiInMaiuscolo()">
+                </p>
+
+
+                <!--Seconda Domanda-->
+                <p>
+                    Quanti valori può assumere una variabile booleana?
+                    <br>
+                    <select id="secondadomanda">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>4</option>
+                        <option>256</option>
+                    </select>
+                </p>
+
+
+                <!--Terza Domanda-->
+                <p>
+                    Quali sono le librerie caricate a run-time?
+                    <br>
+                    <input type="radio" id="terzadomanda" name="Terza" class="Radio">
+                    <label for ="terzadomanda">Statiche</label>
+ 
+                    <br>
+
+                    <input type="radio" id="terzadomanda2" name = "Terza" class="Radio">
+                    <label for ="terzadomanda">Dinamiche</label>
+                 </p>
+
+
+                <!--Quarta Domanda-->
+                <p>
+                    Quali tra queste sono parole chiave in C++?
+                    <br>
+                    <input type="checkbox" id="quartadomanda1" class="Check">
+                
+                    <label for = "quartadomanda1">void</label>
+
+                    <br>
+
+                    <input type="checkbox" id="quartadomanda2" class="Check">
+                    <label for = "quartadomanda2">integer</label>
+
+                    <br>
+
+                    <input type="checkbox" id="quartadomanda3" class="Check">
+                    <label for = "quartadomanda3">char</label>
+                </p>
+
+
+                <!--Quinta Domanda-->
+                <p>
+                    8 bit corrispondono ad un...
+                    <br>
+                    <input type="text" id="quintadomanda" class="Text">
+                </p>
+            </fieldset>
+
+            <!--Bottoni-->
+            <p><input type="button" id="Elabora" class="Bottoni" value="Elabora" onclick="Calcola()"> <input type="reset" id="Cancella" class="Bottoni" value="Cancella"></p>
+            <p>
+                <fieldset id="riquadropunteggio">
+                    <legend>Esito:</legend>
+                    Punteggio:<label id="punteggio" class="risultato">....</label>
+                </fieldset>
+                <input type="button" id="Utente" value="Utente con punteggio" class="Bottoni" onclick="CalcolaUtente()" align = "right"><label id="RisUtente">.....</label>
+            </p>
+        </p>
+    </form>
+    </body>
+</html>
