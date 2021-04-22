@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta char ="UTF-8">
+        <title>Pubblicità telefonica</title>
+
+        <!--Carico lo script in java-->
+        <script type="text/javascript" src="../JS/Script.js"></script>
+
+        <!--Carico lo script in css-->
+        <link rel ="stylesheet" href="../CSS/Script.css">
+    </head>
+    <body id="corpo" onload="LoadingSelect()">
+        <p><center><img src="../Images/Logo.png" class="logo"></center></p>
+        <br>
+        <hr>
+        <p><center><table>
+            <p class="menu"><u>Dettagli Offerta:</u></p>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="testo"><b><u>Internet</u>&NonBreakingSpace;</b></p>
+                    </td>
+                    <td><img src="../Images/arrow.gif" class = "gif"></td>
+                    <td>
+                        <p class="testo"><b>20</b> Giga al mese oppure Giga illimitati<br>
+                        se hai TIM a casa con TIM Unica<br>
+                        Al superamento dei Giga disponibili la navigazione continua a<br>
+                        1,90€ ogni 200 megabyte (max 1 GB di scorta)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="testo"><b><u>Rete TIM</u>&NonBreakingSpace;</b></p>
+                    </td>
+                    <td><img src="../Images/arrow.gif" class = "gif"></td>
+                    <td>
+                        <p class="testo"><b>Tutta</b> la qualità della rete TIM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="testo"><b><u>TIMMUSIC</u>&NonBreakingSpace;</b></p>
+                    </td>
+                    <td><img src="../Images/arrow.gif" class = "gif"></td>
+                    <td>
+                        <p class="testo"><b>Incluso</b> con streaming illimitato su 50 milioni di brani.<br>
+                        Crea le tue playlist  e ascolta tutte le novità. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="testo"><b><u>Modem WI-FI</u>&NonBreakingSpace;</b></p>
+                    </td>
+                    <td><img src="../Images/arrow.gif" class = "gif"></td>
+                    <td>
+                        <p class="testo"><b>Solo nei negozi TIM</b> puoi abbinare un Modem WI-FI con uno sconto di 50€
+                    </td>
+                </tr>
+            </tbody>
+        </table></center></p>
+        <br>
+
+
+    <form>
+        <div class="BOX">
+            <h1><center>DATI:</center></h1>
+            <br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="Labels"><label for="Nome">Nome:</td>
+                        <td><input type="text" class="Texts" id="Nome"></td>
+                    </tr>
+                    <tr>
+                        <td class="Labels"><label for="Cognome">Cognome:</td>
+                        <td><input type="text" class="Texts" id="Cognome"></td>
+                    </tr>
+                    <tr>
+                        <td class="Labels"><label for="LuogoNascita">Luogo Di Nascita:</td>
+                        <td><input type="text" class="Texts" id="LuogoNascita"></td>
+                    </tr>
+                    <tr>
+                        <td class="Labels"><label for="DataNascita">Data Di Nascita:</td>
+                        <td><input type="date" class="Date" id="DataNascita"></td>
+                    </tr>
+                    <tr>
+                        <td class="Labels"><label for="Sesso">Sesso:</td>
+                            <td>
+                                <select class ="Select" id="Sesso">
+                                </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="Labels"><label for="Occhi">Colore Degli Occhi:</td>
+                        <td>
+                            <select class ="Select" id="Occhi">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Labels"><label for="Provincia">Provincia Di Residenza:</td>
+                        <td>
+                            <select class ="Select" id="Provincia">
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><center><input type="button" class ="Button" value="Acquista!" onclick="Animazione()"></center></p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <center><p id="End"></p></center>
+    </form>
+
+<br>
+<br>
+<p><img src="../Images/Pubblicità.jpg" align="left" class="Pubb1"><img src="../Images/Foto Fibra.jpg" align="right" class ="Pubb2"></p>
+    </body>
+</html>
